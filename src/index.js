@@ -15,7 +15,7 @@ class App extends Component {
       videos: [],
       selectedVideo: null
     };
-    this.videoSearch("rahul gandhi pappu");
+    this.videoSearch("trending");
   }
   videoSearch(term) {
     YTSearch({ key: API_KEY, term: term }, videos => {
